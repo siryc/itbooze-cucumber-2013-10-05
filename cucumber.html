@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Automation with Ruby Cucumber</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="description" content="Automation with Ruby Cucumber">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,28 +37,110 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-				<section>
-					<h1>Selenium automation with Ruby Cucumber</h1>
+					<h1>Automation with Ruby Cucumber</h1>
 					<p>Lyubomyr Vovk</p>
 					<p>sirycd@gmail.com</p>
 				</section>
-
 				<section>
-					<h1>Heads Up</h1>
+					<h2>Based on</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
+						<a href="http://pragprog.com/book/hwcuc/the-cucumber-book">
+							The Cucumber Book: Behaviour-Driven Development for Testers and Developers
+						</a>
 					</p>
 
+					<p>Matt Wynne</p>
+					<P>Aslak Hellesoy</P>
+
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						- cucumber authors
+						- reveals authors view on what it is and how to use it
+						- my experience is opposite 
 					</aside>
+				</section>
+				<section>
+					<h2>Intro</h2>
+					<ul>
+						<li class="fragment"><code>BDD</code> framework</li>
+						<li class="fragment">by Matt Wynne and Aslak Hellesoy</li>
+						<li class="fragment">Collaboration tool</li>
+						<li class="fragment">
+							<blockquote>
+							Cucumber is not a tool for testing applications. Cucumber is a
+philosophy for communicating requirements.
+							</blockquote>
+						</li>
+					</ul>
+					<p class="fragment">Robert C. Martin</p>
+
+					<aside class="notes">
+						scenario runner for RSpec in 2008
+					</aside>
+				</section>
+				<section>
+					<h2>Why?</h2>
+					<ul>
+						<li class="fragment">Share developers work with stakeholders with terminology that all can understand</li>
+						<li class="fragment">Involve stakeholders into a process</li>
+						<li class="fragment">Enforce KISS and YAGNY</li>
+						<li class="fragment">
+							Acceptance vs. Unit tests
+							<blockquote>
+								"build the right thing" vs. "build the thing right"
+							</blockquote>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>What I can do with it?</h2>
+					<ul>
+						<li class="fragment">Flash</li>
+						<li class="fragment">Java</li>
+						<li class="fragment">Web</li>
+						<li class="fragment">wire protocol</li>
+					</ul>
+					<p class="fragment">
+						More details in <a href="http://www.amazon.co.uk/dp/1937785017/">Cucumber Recypes</a>
+					</p>
+				</section>
+				<section>
+					<h2>How?</h2>
+					<ul>
+						<li class="fragment">Outside-in approach</li>
+						<li class="fragment">Ubiquitous language</li>
+						<li class="fragment">Living documentation and the Source of Truth</li>
+					</ul>
+
+					<aside class="notes">
+						- starting with a failing customer acceptance test that describes the behavior of the system from the customer’s point of view
+					</aside>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Executable specification
+
+						```
+						Feature: Signup
+
+							Signup should be quick and friendly
+
+							Scenario: Successful signup
+
+								New users should get a confirmation email and be greeted
+								personally by the site once signed in.
+								
+								Given I have chosen to sign up
+								When I sign up with valid details
+								Then I should receive a confirmation email
+								And I should see a personalized greeting message
+						```
+					</script>
+				</section>
+				<section>
+					<h2>How Cucumber works</h2>
+					<p class="fragment">
+						<img src="img/how-cucumber-works.png"/>
+					</p>
 				</section>
 
 			</div>
