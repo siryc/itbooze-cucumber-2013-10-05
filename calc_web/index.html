@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+	<script type="text/javascript">
+		function calculate() {
+			var exp = document.querySelector('#expression').value;
+			var res = document.querySelector('#result');
+			res.innerHTML = eval(exp);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<td>Expression to evaluate</td>
+				<td><input type="text" id="expression"></td>
+				<td><input type="button" value="=" onclick="calculate()"></td>
+				<td><span id="result"></span></td>
+			</tr>
+		</table>
+	</div>
+</body>
