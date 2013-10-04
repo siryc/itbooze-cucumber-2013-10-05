@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Automation with Ruby Cucumber</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="description" content="Automation with Ruby Cucumber">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,310 +37,376 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h1>Automation with Ruby Cucumber</h1>
+					<p>Lyubomyr Vovk</p>
+					<p>sirycd@gmail.com</p>
 				</section>
-
 				<section>
-					<h2>Heads Up</h2>
+					<h2>Based on</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
+						<a href="http://pragprog.com/book/hwcuc/the-cucumber-book">
+							The Cucumber Book: Behaviour-Driven Development for Testers and Developers
+						</a>
 					</p>
+
+					<p>Matt Wynne</p>
+					<P>Aslak Hellesoy</P>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						- cucumber authors
+						- reveals authors view on what it is and how to use it
+						- my experience is opposite 
 					</aside>
 				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2>Intro</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li class="fragment"><code>BDD</code> framework</li>
+						<li class="fragment">by Matt Wynne and Aslak Hellesoy</li>
+						<li class="fragment">Collaboration tool</li>
+						<li class="fragment">
+							<blockquote>
+							Cucumber is not a tool for testing applications. Cucumber is a
+philosophy for communicating requirements.
+							</blockquote>
+						</li>
+					</ul>
+					<p class="fragment">Robert C. Martin</p>
+
+					<aside class="notes">
+						scenario runner for RSpec in 2008
+					</aside>
+				</section>
+				<section>
+					<h2>Why?</h2>
+					<ul>
+						<li class="fragment">Share developers work with stakeholders with terminology that all can understand</li>
+						<li class="fragment">Involve stakeholders into a process</li>
+						<li class="fragment">Enforce KISS and YAGNY</li>
+						<li class="fragment">
+							Acceptance vs. Unit tests
+							<blockquote>
+								"build the right thing" vs. "build the thing right"
+							</blockquote>
+						</li>
 					</ul>
 				</section>
-
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h2>What I can do with it?</h2>
+					<ul>
+						<li class="fragment">Flash</li>
+						<li class="fragment">Java</li>
+						<li class="fragment">Web</li>
+						<li class="fragment">wire protocol</li>
+					</ul>
+					<p class="fragment">
+						More details in <a href="http://www.amazon.co.uk/dp/1937785017/">Cucumber Recypes</a>
+					</p>
 				</section>
+				<section>
+					<h2>How?</h2>
+					<ul>
+						<li class="fragment">Outside-in approach</li>
+						<li class="fragment">Ubiquitous language</li>
+						<li class="fragment">Living documentation and the Source of Truth</li>
+					</ul>
 
+					<aside class="notes">
+						- starting with a failing customer acceptance test that describes the behavior of the system from the customer’s point of view
+					</aside>
+				</section>
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+						## Executable specification
 
 						```
-						<section data-markdown>
-						  ## Markdown support
+						Feature: Signup
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
+							Signup should be quick and friendly
+
+							Scenario: Successful signup
+
+								New users should get a confirmation email and be greeted
+								personally by the site once signed in.
+								
+								Given I have chosen to sign up
+								When I sign up with valid details
+								Then I should receive a confirmation email
+								And I should see a personalized greeting message
 						```
 					</script>
 				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
+					<h2>How Cucumber works</h2>
+					<p class="fragment">
+						<img src="img/how-cucumber-works.png"/>
 					</p>
 				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
 				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<h2>Calc demo</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Outside</h2>
+						<ul>
+							<li class="fragment">Background</li>
+							<li class="fragment">Data Tables</li>
+							<li class="fragment">Scenario outline</li>
+							<li class="fragment">Doc Strings</li>
+							<li class="fragment">Tags</li>
+						</ul>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					<section data-markdown>
+						<script type="text/template">
+							## Background
+
+							```
+							Feature: Some feature
+
+								Here can be feature description
+								
+								Background:
+									Given initial state
+								
+								Scenario: Successful pass
+									When I do the things right
+									Then the system should allow the action
+								
+								Scenario: Unsuccessful path
+									When I do the thing whong
+									Then I should see a warning message
+							```
+						</script>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					<section data-markdown>
+						<script type="text/template">
+							## Data Tables
+
+							```
+							Given a User "Jackson" born on August 29, 1958
+							And a User "Elvis" born on January 8, 1935
+							And a User "John" born on October 9, 1940
+							```
+
+							```
+							Given these Users:
+								| name      | DoB               |
+								| Elvis     | January 8, 1935   |
+								| Jackson   | August 29, 1958   |
+								| John      | October 9, 1940   |
+							```
+						</script>
 					</section>
-				</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Scenario Outline
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+							```
+							Feature: Withdraw Fixed Amount
+								Scenario: Withdraw fixed amount of $50
+									Given I have $500 in my account
+									When I choose to withdraw the fixed amount of $50
+									Then I should receive $50 cash
+									And the balance of my account should be $450
+								
+								Scenario: Withdraw fixed amount of $100
+									Given I have $500 in my account
+									When I choose to withdraw the fixed amount of $100
+									Then I should receive $100 cash
+									And the balance of my account should be $400
+								
+								Scenario: Withdraw fixed amount of $200
+									Given I have $500 in my account
+									When I choose to withdraw the fixed amount of $200
+									Then I should receive $200 cash
+									And the balance of my account should be $300
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Scenario Outline
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
+							```
+							Feature: Withdraw Fixed Amount
+								Scenario Outline: Withdraw fixed amount
+									Given I have <Balance> in my account
+									When I choose to withdraw the fixed amount of <Withdrawal>
+									Then I should receive <Received> cash
+									And the balance of my account should be <Remaining>
+								Examples:
+								| Balance | Withdrawal | Received | Remaining |
+								| $500    | $50        | $50      | $450      |
+								| $500    | $100       | $100     | $400      |
+								| $500    | $200       | $200     | $300      |
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Doc Strings
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+							```
+							Scenario: Ban Unscrupulous Users
+								When I behave unscrupulously
+								Then I should receive an email containing:
+								"""
+								Dear Sir,
+								Your account privileges have been revoked due to your
+								 unscrupulous behavior.
+								Sincerely,
+								The Management
+								"""
+								And my account should be locked
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Tags
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+							```
+							@slow @widgets @nightly
+							Scenario: Generate overnight report
+							Given I am logged in
+							And there is a report "Total widget sales history"
+							...
+							```
+							```
+							@nightly @slow
+							Feature: Nightly Reports
 
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+							@widgets
+							Scenario: Generate overnight widgets report
+							...
+							```
+						</script>
+					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+						<h2>Inside</h2>
+						<ul>
+							<li class="fragment">Hooks</li>
+							<li class="fragment">Transforms</li>
+							<li class="fragment">World</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Hooks
 
+							```
+							TODO
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Transforms
+
+							```
+							CAPTURE_A_NUMBER = Transform /^\d+$/ do |number|
+								number.to_i
+							end
+							```
+							```
+							Given /^I have deposited \$(#{CAPTURE_A_NUMBER}) in my account$/ do |amount|
+							```
+						</script>
+					</section>
+					<section>
+						<h2>World</h2>
+						<p>TODO</p>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>When Cucumber goes bad</h2>
+						<ul>
+							<li class="fragment">
+								Random Fails - <em><strong>Flickering scenarios</strong></em>
+							</li>
+							<li class="fragment">
+								We keep breaking tests unintentionally - <em><strong>Brittle features</strong></em>
+							</li>
+							<li class="fragment">
+								Our features take too long to run - <em><strong>Slow features</strong></em>
+							</li>
+							<li class="fragment">
+								Our stakeholders don’t read our features - <em><strong>Bored stakeholders</strong></em>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Flickering scenarios</h2>
+						<ul>
+							<li class="fragment">Shared Emvironments</li>
+							<li class="fragment">Leaky Scenarios</li>
+							<li class="fragment">Race Conditions and Sleepy Steps</li>
+						</ul>
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							- Leaky - mess with state
+							- RCSS: complex systems (report generation)
 						</aside>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h2>Brittle Features</h2>
+						<ul>
+							<li class="fragment">Fixture Data</li>
+							<li class="fragment">Duplication</li>
+							<li class="fragment">Leaky Scenarios</li>
+							<li class="fragment">Tester Apartheid</li>
+						</ul>
+						<aside class="notes">
+							- Leaky - mess with state
+							- Duplications: Background, Scenario Outline
+							- Tester Apartheid: testers != devs
+						</aside>
+					</section>
+					<section>
+						<h2>Slow Features</h2>
+						<ul>
+							<li class="fragment">Race Conditions and Sleepy Steps</li>
+							<li class="fragment">Lots of Scenarios</li>
+							<li class="fragment">Big Ball of Mud</li>
+						</ul>
+						<aside class="notes">
+							- RCSS: complex systems (report generation)
+						</aside>
+					</section>
+					<section>
+						<h2>Bored Stakeholders</h2>
+						<ul>
+							<li class="fragment">Incidental Details</li>
+							<li class="fragment">Imperative Steps</li>
+							<li class="fragment">Duplication</li>
+							<li class="fragment">Ubiquitous What?</li>
+							<li class="fragment">Sioled (Locked) Features</li>
+						</ul>
+						<aside class="notes">
+							- Duplications: Background, Scenario Outline
+							- Ubiquitous What? != Ubiquitous language
+						</aside>
 					</section>
 				</section>
-
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<h2>Remember</h2>
+					<blockquote>
+					Cucumber is not a tool for testing applications. Cucumber is a
+philosophy for communicating requirements.
+					</blockquote>
+					<p class="fragment">Robert C. Martin</p>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
+					<h1>?</h1>
 				</section>
-
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h1>Thakn You</h1>
 				</section>
 
 			</div>
