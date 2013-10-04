@@ -288,29 +288,125 @@ philosophy for communicating requirements.
 					<section>
 						<h2>Inside</h2>
 						<ul>
+							<li class="fragment">Hooks</li>
 							<li class="fragment">Transforms</li>
 							<li class="fragment">World</li>
-							<li class="fragment">Hooks</li>
 						</ul>
 					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Hooks
+
+							```
+							TODO
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Transforms
+
+							```
+							CAPTURE_A_NUMBER = Transform /^\d+$/ do |number|
+								number.to_i
+							end
+							```
+							```
+							Given /^I have deposited \$(#{CAPTURE_A_NUMBER}) in my account$/ do |amount|
+							```
+						</script>
+					</section>
 					<section>
-						<h2>Transforms</h2>
+						<h2>World</h2>
+						<p>TODO</p>
 					</section>
 				</section>
 
 
 				<section>
-					<h2>When Cucumber goes bad</h2>
-					<ul>
-						<li class="fragment">
-							Random Fails
-							<p></p>
-						</li>
-						<li class="fragment">Data Tables</li>
-						<li class="fragment">Scenario outline</li>
-						<li class="fragment">Doc Strings</li>
-						<li class="fragment">Tags</li>
-					</ul>
+					<section>
+						<h2>When Cucumber goes bad</h2>
+						<ul>
+							<li class="fragment">
+								Random Fails - <em><strong>Flickering scenarios</strong></em>
+							</li>
+							<li class="fragment">
+								We keep breaking tests unintentionally - <em><strong>Brittle features</strong></em>
+							</li>
+							<li class="fragment">
+								Our features take too long to run - <em><strong>Slow features</strong></em>
+							</li>
+							<li class="fragment">
+								Our stakeholders don’t read our features - <em><strong>Bored stakeholders</strong></em>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Flickering scenarios</h2>
+						<ul>
+							<li class="fragment">Shared Emvironments</li>
+							<li class="fragment">Leaky Scenarios</li>
+							<li class="fragment">Race Conditions and Sleepy Steps</li>
+						</ul>
+						<aside class="notes">
+							- Leaky - mess with state
+							- RCSS: complex systems (report generation)
+						</aside>
+					</section>
+					<section>
+						<h2>Brittle Features</h2>
+						<ul>
+							<li class="fragment">Fixture Data</li>
+							<li class="fragment">Duplication</li>
+							<li class="fragment">Leaky Scenarios</li>
+							<li class="fragment">Tester Apartheid</li>
+						</ul>
+						<aside class="notes">
+							- Leaky - mess with state
+							- Duplications: Background, Scenario Outline
+							- Tester Apartheid: testers != devs
+						</aside>
+					</section>
+					<section>
+						<h2>Slow Features</h2>
+						<ul>
+							<li class="fragment">Race Conditions and Sleepy Steps</li>
+							<li class="fragment">Lots of Scenarios</li>
+							<li class="fragment">Big Ball of Mud</li>
+						</ul>
+						<aside class="notes">
+							- RCSS: complex systems (report generation)
+						</aside>
+					</section>
+					<section>
+						<h2>Bored Stakeholders</h2>
+						<ul>
+							<li class="fragment">Incidental Details</li>
+							<li class="fragment">Imperative Steps</li>
+							<li class="fragment">Duplication</li>
+							<li class="fragment">Ubiquitous What?</li>
+							<li class="fragment">Sioled (Locked) Features</li>
+						</ul>
+						<aside class="notes">
+							- Duplications: Background, Scenario Outline
+							- Ubiquitous What? != Ubiquitous language
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Remember</h2>
+					
+					<blockquote>
+					Cucumber is not a tool for testing applications. Cucumber is a
+philosophy for communicating requirements.
+					</blockquote>
+					<p class="fragment">Robert C. Martin</p>
+				</section>
+				<section>
+					<h1>?</h1>
+				</section>
+				<section>
+					<h1>Thakn You</h1>
 				</section>
 
 			</div>
