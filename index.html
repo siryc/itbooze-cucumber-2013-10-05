@@ -298,7 +298,27 @@ philosophy for communicating requirements.
 							## Hooks
 
 							```
-							TODO
+							Before do
+							  # Do something before each scenario.
+							end
+							```
+							```
+							After do |scenario|
+							  if(scenario.failed?)
+							  ...
+							end
+							```
+							```
+							Before('@cucumis, @sativus', '@aqua') do
+							  # This will only run before scenarios tagged
+							  # with (@cucumis OR @sativus) AND @aqua 
+							end
+							```
+							```
+							Before('@cucumis', '~@sativus') do
+							  # This will only run before scenarios tagged
+							  # with @cucumis AND NOT @sativus.
+							end
 							```
 						</script>
 					</section>
@@ -318,7 +338,7 @@ philosophy for communicating requirements.
 					</section>
 					<section>
 						<h2>World</h2>
-						<p>TODO</p>
+						<p>DEMO</p>
 					</section>
 				</section>
 
